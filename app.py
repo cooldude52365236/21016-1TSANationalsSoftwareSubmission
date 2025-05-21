@@ -1,12 +1,10 @@
 # This is Team No. 21016-1 submission for TSA Nationals 2025 Software Development. The website is https://ecoimpactnationalstsa2025.replit.app
 
 import streamlit as st
-import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
 from datetime import datetime, timedelta
-import numpy as np
-from utils import get_color_scale, display_metric_card, animated_progress_bar
+from utils import display_metric_card, animated_progress_bar
 from data_processor import load_data, filter_data_by_date, calculate_statistics, calculate_resource_efficiency
 from recommendation_engine import generate_recommendations, calculate_potential_savings, calculate_environmental_impact
 from eco_impact import calculate_regional_comparison, get_eco_impact_score, get_impact_recommendations, get_all_regions
@@ -25,7 +23,7 @@ if 'data' not in st.session_state:
 st.markdown("""
 <div style="background-color:#e8f5e9; padding:10px; border-radius:10px; margin-bottom:10px">
     <h1 style="color:#2e7d32; text-align:center">Agricultural Sustainability Dashboard</h1>
-    <p style="color:#444; text-align:center; font-size:18px">TSA Nationals Team 21016-1 submission for 2025 Software Development.>
+    <p style="color:#444; text-align:center; font-size:18px">TSA Nationals Team 21016-1 submission for 2025 Software Development</p>
 </div>
 """, unsafe_allow_html=True)
 
