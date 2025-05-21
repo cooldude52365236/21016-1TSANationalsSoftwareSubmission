@@ -25,7 +25,7 @@ if 'data' not in st.session_state:
 st.markdown("""
 <div style="background-color:#e8f5e9; padding:10px; border-radius:10px; margin-bottom:10px">
     <h1 style="color:#2e7d32; text-align:center">Agricultural Sustainability Dashboard</h1>
-    <p style="color:#444; text-align:center; font-size:18px">Track environmental metrics and optimize resource usage for sustainable farming</p>
+    <p style="color:#444; text-align:center; font-size:18px">TSA Nationals Team 21016-1 submission for 2025 Software Development./p>
 </div>
 """, unsafe_allow_html=True)
 
@@ -586,6 +586,7 @@ with st.expander("View Regional Eco-Impact Recommendations"):
 st.markdown("---")
 st.markdown("### About This Dashboard")
 st.markdown("""
+TSA Nationals Team 21016-1 submission for 2025 Software Development.
 This website tracks environmental data such as temperature, humidity, soil
 water use, and energy use to allow farmers to make
 sustainable choices. The user can enter everyday measurements, see
