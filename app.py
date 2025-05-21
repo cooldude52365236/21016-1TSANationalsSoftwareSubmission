@@ -25,7 +25,7 @@ if 'data' not in st.session_state:
 st.markdown("""
 <div style="background-color:#e8f5e9; padding:10px; border-radius:10px; margin-bottom:10px">
     <h1 style="color:#2e7d32; text-align:center">Agricultural Sustainability Dashboard</h1>
-    <p style="color:#444; text-align:center; font-size:18px">TSA Nationals Team 21016-1 submission for 2025 Software Development./p>
+    <p style="color:#444; text-align:center; font-size:18px">TSA Nationals Team 21016-1 submission for 2025 Software Development.>
 </div>
 """, unsafe_allow_html=True)
 
