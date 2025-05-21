@@ -586,7 +586,7 @@ with st.expander("View Regional Eco-Impact Recommendations"):
 st.markdown("---")
 st.markdown("### About This Dashboard")
 st.markdown("""
-It tracks environmental data such as temperature, humidity, soil
+This website tracks environmental data such as temperature, humidity, soil
 water use, and energy use to allow farmers to make
 sustainable choices. The user can enter everyday measurements, see
 trends, assess efficiency scores, and get individual recommendations
