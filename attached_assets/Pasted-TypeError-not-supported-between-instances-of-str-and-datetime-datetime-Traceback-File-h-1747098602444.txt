@@ -1,0 +1,29 @@
+TypeError: '>=' not supported between instances of 'str' and 'datetime.datetime'
+Traceback:
+File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/streamlit/runtime/scriptrunner/exec_code.py", line 121, in exec_func_with_error_handling
+    result = func()
+             ^^^^^^
+File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 645, in code_to_exec
+    exec(code, module.__dict__)
+File "/home/runner/workspace/app.py", line 79, in <module>
+    filtered_data = filter_data_by_date(st.session_state.data, selected_start_date, selected_end_date)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File "/home/runner/workspace/data_processor.py", line 36, in filter_data_by_date
+    mask = (data['date'] >= start_date) & (data['date'] <= end_date)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/pandas/core/ops/common.py", line 76, in new_method
+    return method(self, other)
+           ^^^^^^^^^^^^^^^^^^^
+File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/pandas/core/arraylike.py", line 60, in __ge__
+    return self._cmp_method(other, operator.ge)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/pandas/core/series.py", line 6119, in _cmp_method
+    res_values = ops.comparison_op(lvalues, rvalues, op)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/pandas/core/ops/array_ops.py", line 344, in comparison_op
+    res_values = comp_method_OBJECT_ARRAY(op, lvalues, rvalues)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/pandas/core/ops/array_ops.py", line 129, in comp_method_OBJECT_ARRAY
+    result = libops.scalar_compare(x.ravel(), y, op)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+File "ops.pyx", line 107, in pandas._libs.ops.scalar_compar
